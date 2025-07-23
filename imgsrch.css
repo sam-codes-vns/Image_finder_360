@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,200;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    
+    margin: 40px 0 60px 0;    
+    background-color: yellow;
+}
+
+h1
+
+b {
+    color: rgb(255, 3, 3);
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
+#srch-input {
+   
+    width: 60%;
+    max-width: 400px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button {
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #138065;
+    margin-left: 10px;
+}
+.search-results{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.result {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+    
+
+
+
+}
+
+.search-result img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    transition: opacity 0.2s ease-in-out ;
+}
+
+.result:hover img {
+    opacity: 0.8;
+}
+
+
+.search-results a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button {
+    background-color: #008cba;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 30px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border: none;
+     display: none;
+
+}
+
+button:hover {
+    filter: brightness(0.8); /* Adjust the brightness value as desired */
+  }
+
+@media screen and (max-width: 768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-results {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .search-results {
+        width: 100%;
+    }
+}
